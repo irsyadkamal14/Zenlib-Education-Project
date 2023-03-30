@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!--Link Style-->
+    <style>
+      a:link {
+        color: black;
+        text-decoration: none;
+      }
+      a:visited {
+        color: black;
+        text-decoration: none;
+      }
+      a:hover {
+        color: rgba(21, 126, 236, 1) ;
+        text-decoration: none;
+      }
+      </style>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,9 +54,9 @@
     <nav class="navbar">
       <p class="title">ZenLib</p>
       <div class="nav-menu">
-        <p>Beranda</p>
-        <p>Kategori</p>
-        <p>Tentang ZenLib</p>
+        <a href="index.html">Beranda</a>
+        <a href="#kategori" >Kategori</a>
+        <a href="#footer" >Tentang ZenLib</a>
         <p class="button-in">Masuk</p>
       </div>
     </nav>
@@ -51,11 +68,12 @@
           <p class="title-content">
             Beragam buku bacaan seru dan edukatif bisa kamu temukan di sini.
           </p>
-          <p class="btn-hero">Masuk</p>
+          <a href="#rekomendasib" class="btn-hero">Cari Buku</a>
         </div>
         <img src="./screens/assets/images/hero.svg" alt="hero" />
       </section>
       <!-- MENU SECTION -->
+      <p id="kategori"></p>
       <section class="menu-section">
         <div class="menu-content">
           <img src="./screens/assets/icons/people.svg" alt="" />
@@ -72,6 +90,7 @@
       </section>
 
       <!-- READING BOOK -->
+      <p id="rekomendasib"></p>
       <section class="reading-section">
         <div class="reading-content">
           <h1>Rekomendasi Buku</h1>
@@ -102,6 +121,7 @@
       </section>
     </div>
     <!-- FOOTER -->
+    <p id="footer"></p>
     <section class="footer-section">
       <div class="footer-content">
         <div class="title-footer">

@@ -60,7 +60,7 @@
 .hero-section > div {
   width: 50%;
   align-self: center;
-  /* margin-top: 125px; */
+  /*margin-top: 125px;*/
 }
 
 .hero-section > img {
@@ -89,7 +89,7 @@
   font-weight: 500;
   color: white;
   margin: 120px 0 0 0;
-  padding: 10px 0px;
+  padding: 10px 20px;
   border-radius: 50px;
   background-color: var(--primary);
   width: 120px;
@@ -100,16 +100,17 @@
   font-size: 25px;
   font-weight: 500;
   line-height: 30px;
+  margin-bottom: 25px;
 }
 /* MENU SECTION */
 .menu-section {
   display: flex;
-  height: 300px;
+  height: 410px; 
   text-align: center;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 80px;
 }
 .menu-section img {
   height: 150px;
