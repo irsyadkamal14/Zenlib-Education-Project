@@ -1,0 +1,124 @@
+:root {
+  --primary: rgba(246, 80, 82, 1);
+  --second: rgba(21, 126, 236, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar .brand {
+  font-family: "Katibeh", cursive;
+  font-size: 40px;
+}
+
+.navbar .nav-item button {
+  background-color: var(--primary);
+  border-radius: 25px;
+  width: 120px;
+  color: white;
+  font-weight: 500;
+}
+/* Input */
+.input-box {
+  position: relative;
+  height: 60px;
+  width: 800px;
+  background: #fff;
+  margin: 50px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  padding: 0 155px 0 65px;
+  background-color: transparent;
+}
+.input-box .button {
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+.modal-body .btn-read {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 24px;
+  font-weight: 500;
+  width: 100px;
+}
+/* Book */
+.book-list .card:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--primary);
+  margin-top: 100px;
+}
+.footer .brand {
+  font-family: "Katibeh", cursive;
+  font-size: 50px;
+}
+
+.footer .col p {
+  font-weight: 600;
+}
+
+.footer .kotak-saran {
+  height: 30px;
+  background-color: white;
+  margin-top: 5px;
+  color: black;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 5px 0 0 5px;
+}
+
+.footer .kotak-feedback {
+  height: 70px;
+  background-color: white;
+  margin-top: 5px;
+  color: black;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 5px 0 0 5px;
+}
+
+.footer .btnkirim {
+  height: 40px;
+  margin-left: 280px;
+  padding-top: 9px;
+  text-align: center;
+  margin-top: 5px;
+  border: 2px solid white;
+  border-radius: 10px;
+}

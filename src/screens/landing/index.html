@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:wght@200;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar shadow-sm navbar-expand-lg fixed-top bg-white">
+      <div class="container">
+        <h2 class="brand">ZenLib</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex-row-reverse"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item fw-medium">
+              <a class="nav-link" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item fw-medium">
+              <a class="nav-link" href="#recomended">Rekomendasi</a>
+            </li>
+            <li class="nav-item fw-medium">
+              <a class="nav-link" href="#footer">Tentang ZenLib</a>
+            </li>
+            <li class="nav-item fw-medium">
+              <button
+                class="nav-link"
+                data-bs-target="#exampleModalToggle"
+                data-bs-toggle="modal"
+              >
+                Masuk
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Hero -->
+
+      <div class="row align-items-center hero mt-5">
+        <div class="col-lg-5 align-self-center">
+          <h1 class="fw-bolder">Baca Buku Seru di ZenLib</h1>
+          <p class="fw-medium">
+            Beragam buku bacaan seru dan edukatif bisa kamu temukan di sini.
+          </p>
+          <button
+            class="btn"
+            data-bs-target="#exampleModalToggle"
+            data-bs-toggle="modal"
+            type="submit"
+          >
+            Masuk
+          </button>
+        </div>
+        <div class="col-lg-7 justify-content-center">
+          <img src="../assets/images/hero.svg" class="img-fluid" alt="Buku" />
+        </div>
+      </div>
+
+      <!-- Book -->
+      <div class="d-flex justify-content-between" id="recomended">
+        <h5 class="fw-bolder">Rekomendasi Buku</h5>
+        <a href="../detail/detail.html">Lainnya</a>
+      </div>
+      <hr />
+      <div
+        class="d-flex align-content-start flex-wrap gap-4 justify-content-center"
+      >
+        <div class="card border border-0" style="width: 12rem">
+          <img
+            src="../assets/images/book2.svg"
+            class="card-img-top"
+            alt="..."
+            style="height: 18rem"
+          />
+          <div class="card-body px-0">
+            <p class="card-text fw-medium">
+              Unlimited access to over 1,000,000 textbooks
+            </p>
+          </div>
+        </div>
+        <div class="card border border-0 rounded" style="width: 12rem">
+          <img
+            src="../assets/images/book.svg"
+            class="card-img-top"
+            alt="..."
+            style="height: 19rem"
+          />
+          <div class="card-body px-0">
+            <p class="card-text fw-medium">
+              Unlimited access to over 1,000,000 textbooks
+            </p>
+          </div>
+        </div>
+        <div class="card border border-0 rounded" style="width: 12rem">
+          <img
+            src="../assets/images/book3.svg"
+            class="card-img-top"
+            style="height: 19rem"
+            alt="..."
+          />
+          <div class="card-body px-0">
+            <p class="card-text fw-medium">
+              Unlimited access to over 1,000,000 textbooks
+            </p>
+          </div>
+        </div>
+        <div class="card border border-0" style="width: 12rem">
+          <img
+            src="../assets/images/book.svg"
+            class="card-img-top rounded"
+            style="height: 19rem"
+            alt="..."
+          />
+          <div class="card-body px-0">
+            <p class="card-text fw-medium">
+              Unlimited access to over 1,000,000 textbooks
+            </p>
+          </div>
+        </div>
+        <div class="card border border-0" style="width: 12rem">
+          <img
+            src="../assets/images/book1.svg"
+            class="card-img-top"
+            alt="..."
+            style="height: 19rem"
+          />
+          <div class="card-body px-0">
+            <p class="card-text fw-medium">
+              Unlimited access to over 1,000,000 textbooks
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <!-- Modal Login -->
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="center mb-3">
+              <h1 class="">ZenLib</h1>
+              <p class="fs-6 fw-normal text-center">
+                Masuk dengan Akun yang sudah terdaftar
+              </p>
+              <hr />
+              <form method="post" class="mt-4">
+                <div class="input-field mb-2">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Email"
+                    required
+                  />
+                  <i class="bx bx-user"></i>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="password"
+                    class="input"
+                    placeholder="Password"
+                    required
+                  />
+                  <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-field">
+                  <input type="submit" class="submit" value="Masuk" required />
+                </div>
+                <div class="buttom mt-4 mx-2">
+                  <div class="left">
+                    <!-- <input type="checkbox" id="check" /> -->
+                    <label for="check"> Lupa?</label>
+                  </div>
+                  <div class="right">
+                    <label><a href="#">Buat Akun</a></label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+              Modal 2
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Hide this modal and show the first with the button below.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-primary"
+              data-bs-target="#exampleModalToggle"
+              data-bs-toggle="modal"
+            >
+              Back to first
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer text-white" id="footer">
+      <div class="container footer-section mt-4 py-2">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <h1 class="text-black brand">ZenLib</h1>
+            <p>
+              ZenLib merupakan sebuah website edukasi yang menyediakan berbagai
+              macam buku bacaan untuk membantu siswa belajar dengan mudah
+            </p>
+          </div>
+          <div class="col g-3">
+            <p>Ada Masukan Untuk kami?</p>
+            <div class="kotak-saran">Nama</div>
+            <div class="kotak-saran">Email</div>
+            <div class="kotak-feedback">Feedback</div>
+            <div class="btnkirim">Kirim</div>
+          </div>
+        </div>
+        <hr style="color: white" />
+        <p>2023 ZenLib. All right reserved</p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
